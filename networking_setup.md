@@ -105,7 +105,7 @@
 
 ## Remote management
 
-Ideapad running Ubuntu Server has Tailscale running on it. It is functioning as a [subnet router](https://tailscale.com/docs/features/subnet-routers), advertising nodes in the rose network for remote access and management, it lives in the home network, it needed a static route in order to properly serve as a subnet router.
+The Ideapad runs Tailscale and functions as a [subnet router](https://tailscale.com/docs/features/subnet-routers), advertising the Rose network for remote access and management. Since it resides on the home network, it uses a static route through OPNsense to reach the Rose network.
 
 ``` mermaid
 flowchart LR
