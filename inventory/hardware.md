@@ -19,7 +19,7 @@
 | TP-Link TL-SG105      | Unmanaged 5-port switch              | No VLANs                                                           | Spare                                                               | Undecided but most likely as a means of a backup (although would require me to disable VLANs completely)                                                          |
 | ASUS RT-AX55          | Older Wi-Fi router                   | Works                                                              | Spare                                                               | Undecided but most likely retired as family will not want to sub in this old router, need to see if there are anyways to repurpose this specific model of router. |
 | Opnsense on Cork-tree | Firewall and router for the lab      | One Ethernet port                                                  | Planned, not built                                                  | See [[#Opnsense on Kisses]]                                                                                                                                       |
-|                       |                                      |                                                                    |                                                                     |                                                                                                                                                                   |
+
 ### Current network cabling
 ![Current network cabling](https://github.com/marciea/rose/blob/main/images/cabling_topo.png?raw=true)
 
@@ -36,10 +36,9 @@
 
 | VLAN ID | VLAN Name | Member Port | Tagged Ports | Untagged Ports |
 | ------- | --------- | ----------- | ------------ | -------------- |
-| 10      | Upstream  | 1-2         | 1            | 2              |
-| 20      | Rose      | 1,3-8       | 1            | 3,8            |
+| 10      | Upstream  | 1-3         | 1            | 2-3            |
+| 20      | Rose      | 1,3-8       | 1            | 3-8            |
 
 ### Extra notes
 - One cable runs from the home router to the 8-port switch.
 - Everything except Bulletproof and Halos plugs into that switch. Bulletproof is in the adjacent room, but Halos is where I mainly operate off of in the same room as all the project Rose machines.
-- Nothing really "household" is connected to the switch.
